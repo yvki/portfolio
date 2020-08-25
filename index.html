@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<title>YVKI - About Me</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--icon & stylesheet-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link href="https://fonts.googleapis.com/css2?family=Stardos+Stencil&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap">
+<!--bootstrap, javascript & popper-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script>
+    function myFunction() {
+        var txt;
+        if (confirm("This site uses cookies to personalize and enhance your experience.\n\nBy clicking OK, you agree to our use of marketing and social media cookies as described in the Privacy Policy.")) {
+            window.alert("Cookies are enabled on this site.");
+        } else {
+            window.alert("Cookies are blocked on this site.");
+        }
+        document.getElementById("demo").innerHTML = txt;
+    }
+</script>
+<style>
+    body {
+        font-family: "Times New Roman", Georgia, Serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Playfair Display";
+        letter-spacing: 3px;
+    }
+
+    .page {
+        background-color: black;
+    }
+
+    .w3-bar-item:hover {
+        color: rgb(53, 123, 228) !important;
+    }
+
+    .fa-graduation-cap:hover {
+        color: rgb(53, 123, 228) !important;
+    }
+
+    .fa-briefcase:hover {
+        color: rgb(53, 123, 228) !important;
+    }
+
+    .fa-flag:hover {
+        color: rgb(53, 123, 228) !important;
+    }
+
+    .fa-futbol-o:hover {
+        color: rgb(53, 123, 228) !important;
+    }
+
+
+    .fa-heart:hover {
+        color: rgb(53, 123, 228) !important;
+    }
+
+    .fa-trophy:hover {
+        color: rgb(53, 123, 228) !important;
+    }
+
+    .fa-pencil-square-o:hover {
+        color: rgb(53, 123, 228) !important;
+    }
+
+    .fa-shopping-cart:hover {
+        color: rgb(53, 123, 228) !important;
+    }
+
+    button {
+        background-color: black;
+        border: none;
+    }
+
+    .fa-linkedin {
+        color: #007bb5;
+        font-size: 25px;
+        padding: 5px;
+    }
+
+    .page {
+        background-color: black;
+    }
+
+    .btn:hover {
+        background-color: royalblue;
+        border: 1px solid white;
+    }
+
+    figcaption {
+        font-size: 14px;
+        font-family: 'Stardos Stencil', cursive;
+    }
+</style>
+
+<body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top w3-border-bottom">
+        <div class="w3-bar w3-large w3-black w3-padding w3-card" style="letter-spacing:2px;">
+            <a href="login.html" class="w3-bar-item"><img src="images/logo.PNG" width="35" height="35"></a>
+            <!--<a class="w3-bar-item"> E-Portfolio</a>-->
+            <!-- Right-sided navbar links. Hide them on small screens. -->
+            <div class="w3-right w3-hide-medium">
+                <button class="button w3-border w3-border-white" onclick="myFunction()" style="font-size:12px">🍪
+                    ?</button>
+                <a href="academics.html" class="w3-bar-item"><i class="fa fa-graduation-cap"></i></a>
+                <a href="ccas.html" class="w3-bar-item"><i class="fa fa-briefcase"></i></a>
+                <a href="leadership.html" class="w3-bar-item"><i class="fa fa-flag"></i></a>
+                <a href="sports.html" class="w3-bar-item"><i class="fa fa-futbol-o"></i></a>
+                <a href="vias.html" class="w3-bar-item"><i class="fa fa-heart"></i></a>
+                <a href="others.html" class="w3-bar-item"><i class="fa fa-trophy"></i></a>
+                <a href="contact.html" class="w3-bar-item"><i class="fa fa-pencil-square-o"></i></a>
+                <a href="merch.html" class="w3-bar-item"><i class="fa fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page content -->
+    <div class="page">
+        <div class="w3-content" style="max-width:1050px">
+
+            <div class="w3-row w3-padding-64 w3-animate-top" id="about">
+                <div class="w3-col m6 w3-padding w3-hide-small">
+                    <img src="images/vic@pokecentre.jpg"
+                        class="w3-round w3-border w3-border-blue w3-image w3-opacity-min" alt="vic@pokecentre"
+                        width="300" height="450" vspace="80">
+                </div>
+
+                <div class="w3-col m6">
+                    <h1 class="w3-center"><span class="w3-tag w3-tag-grey"></span></h1><br>
+                    <font color="white">
+                        <p class="w3-medium" style="text-align:justify">
+                            Vicki Yap is an 18 year-old Sophomore currently pursuing the Diploma in Information
+                            Technology, specialized in User Experience and Interface Design. She successfully applied to
+                            the Singapore Polytechnic School of Computing via the Early Admissions Exercise in 2018.</p>
+
+                        <p class="w3-medium" style="text-align:justify">
+                            During vacations, she work as a Sales Associate at Resorts World Sentosa Universal
+                            Studio Singapore's Sesame Street retail outlets. Occasionally, she performs 'rescue'
+                            shifts at Adventure Cove Waterpark's Reef 'N Wave retail outlet.</p>
+
+                        <p class="w3-medium" style="text-align:justify">
+                            Outside of schooling and working, she enjoys gaming on her Nintendo Switch, listening to
+                            music, playing hockey and watching movies.</p>
+
+                        <p class="w3-medium" style="text-align:justify">
+                            Vicki is thankful for all the continuous support throughout her academic journey and intend
+                            to share more of her achievements as her E-Portfolio progresses on.</p>
+
+                        <p class="w3-medium" style="text-align: justify">
+                        <p>She also has an extensive Linked<a href="https://www.linkedin.com/in/yvki/"
+                                class="fab fa-linkedin" style="font-size: 13px;"></a> network, so feel free to follow
+                            it for early contents and exclusive projects updates.</p>
+                        </p>
+
+                        <p class="w3-medium" style="text-align:justify">
+                            Cheers, <img src="images/logo.gif" width="120" height="120">
+                        </p>
+                    </font>
+                </div>
+            </div>
+
+            <div class="w3-container w3-black w3-center w3-panel">
+                <p class="w3-xxlarge w3-animate-top">SKILLED IN</p>
+                <p>cool tech stuff</p>
+                <p><span class="w3-large w3-animate-top">
+                        <div class="w3-row" style="margin-top:30px">
+                            <div class="w3-col s4 w3-animate-zoom">
+                                <p><i class="fab fa-android" style="font-size: 55px; color: royalblue"></i></p>
+                                <p><b>Android Mobile Development</b></p>
+                                <p>using Android Studio, Node JS and React Native</p>
+                            </div>
+                            <div class="w3-col s4 w3-animate-zoom">
+                                <p><i class="fas fa-code" style="font-size: 55px; color: royalblue"></i></p>
+                                <p><b>Back End Web Development</b></p>
+                                <p>using Ajax, Axios, Heroku and Javascript</p>
+                            </div>
+                            <div class="w3-col s4 w3-animate-zoom">
+                                <p><i class="fab fa-aws" style="font-size: 55px; color: royalblue"></i></p>
+                                <p><b>Computing Fundamentals</b></p>
+                                <p>using Amazon Web Services, PuTTy and Ubuntu</p>
+                            </div>
+                        </div>
+                        <div class="w3-row" style="margin-top:30px">
+                            <div class="w3-col s4 w3-animate-zoom">
+                                <p><i class="fas fa-database" style="font-size: 55px; color: royalblue"></i></p>
+                                <p><b>Data Engineering </b><span class="w3-tiny fa fa-stack fa-lg">
+                                        <font color="#29C0FF"><i class="fa fa-certificate fa-stack-2x"></i></font>
+                                        <font color="white"><i class="fa fa-check fa-stack-1x fa-inverse"></i></font>
+                                    </span></p>
+                                <p>using Databricks, Microsoft SQL Server and MySQL</p>
+                            </div>
+                            <div class="w3-col s4 w3-animate-zoom">
+                                <p><i class="fas fa-search-dollar" style="font-size: 55px; color: royalblue"></i></p>
+                                <p><b>Digital Marketing </b><span class="w3-tiny fa fa-stack fa-lg">
+                                        <font color="#29C0FF"><i class="fa fa-certificate fa-stack-2x"></i></font>
+                                        <font color="white"><i class="fa fa-check fa-stack-1x fa-inverse"></i></font>
+                                    </span></p>
+                                <p>using Facebook, FlexClip, Instagram and YouTube</p>
+                            </div>
+                            <div class="w3-col s4 w3-animate-zoom">
+                                <p><i class="fab fa-adobe" style="font-size: 55px; color: royalblue"></i></p>
+                                <p><b>Digital Visual Design </b><span class="w3-tiny fa fa-stack fa-lg">
+                                        <font color="#29C0FF"><i class="fa fa-certificate fa-stack-2x"></i></font>
+                                        <font color="white"><i class="fa fa-check fa-stack-1x fa-inverse"></i></font>
+                                    </span></p>
+                                <p>using Adobe Photoshop, Canvas and Google Drawings</p>
+                            </div>
+                        </div>
+                        <div class="w3-row" style="margin-top:30px">
+                            <div class="w3-col s4 w3-animate-zoom">
+                                <p><i class="fab fa-github" style="font-size: 55px; color: royalblue"></i></p>
+                                <p><b>Front End Web Development</b></p>
+                                <p>using Bootstrap, CSS, GitHub and HTML5</p>
+                            </div>
+                            <div class="w3-col s4 w3-animate-zoom">
+                                <p><i class="fab fa-adobe" style="font-size: 55px; color: royalblue"></i></p>
+                                <p><b>User Experience and Interface Design</b> <span class="w3-tiny fa fa-stack fa-lg">
+                                        <font color="#29C0FF"><i class="fa fa-certificate fa-stack-2x"></i></font>
+                                        <font color="white"><i class="fa fa-check fa-stack-1x fa-inverse"></i></font>
+                                    </span></p>
+                                <p>using Adobe Illustrator, Adobe XD and Moqups</p>
+                            </div>
+                        </div>
+            </div>
+        </div>
+
+        <div class="w3-container w3-padding-32 w3-black w3-center w3-panel">
+            <p class="w3-xxlarge w3-animate-top" style="padding-top: 50px">PROJECTS</p>
+            <p>showcase of the best works</p>
+            <figure style="float:left;">
+                <img src="images/art.jpg" height="400"
+                    style="border: 2px solid rgb(255,255,204); padding-top: 5px; padding-bottom: 5px; padding-left: 5px; padding-right: 5px;">
+                <b>
+                    <figcaption style="color: rgb(255,255,204); padding-top: 20px;">view the design piece <a
+                            href="images/art.jpg"> here</a></figcaption>
+                </b>
+            </figure>
+            <figure style="float:right">
+                <img src="images/app2.PNG" height="400"
+                    style="border: 2px solid rgb(255,255,204); padding-top: 5px; padding-bottom: 5px; padding-left: 5px; padding-right: 5px;">
+                <b>
+                    <figcaption style="color: rgb(255,255,204); padding-top: 20px;"> view the prototype in <a
+                            href="https://xd.adobe.com/view/e4bf4a93-e3c9-45f5-795f-a8680d1101c2-928e/">mobile</a> and
+                        <a href="https://xd.adobe.com/view/e5404136-b4ca-48bd-9b67-9dcda8eef093-b013/">website</a>
+                        formats</figcaption>
+                </b>
+            </figure>
+        </div>
+        <div class="w3-container w3-padding-16 w3-black w3-center w3-panel">
+            <figure style="float:center;">
+                <img src="images/app.PNG" height="400"
+                    style="border: 2px solid rgb(255,255,204); padding-top: 5px; padding-bottom: 5px; padding-left: 5px; padding-right: 5px;">
+                <b>
+                    <figcaption style="color: rgb(255,255,204); padding-top: 20px;"> view the prototype in <a
+                            href="https://marvelapp.com/6d42f1b">mobile</a> and <a
+                            href="https://xd.adobe.com/view/e6612247-5a4c-4775-6675-5c61c5a56059-9050/?fullscreen">tablet</a>
+                        formats</figcaption>
+                </b>
+            </figure>
+        </div>
+
+        <div class="w3-container w3-padding-8 w3-black w3-center w3-panel">
+            <p class="w3-xxlarge w3-animate-top">RESUME</p>
+            <p>for that prospective job interview</p>
+            <button class="btn"
+                style="border: 2px solid royalblue; color: white; padding: 6px 10px; cursor: pointer; font-size: 14px;">
+                <a href="images/Resume.pdf"> view here </a> <i class="fas fa-external-link-alt" style="font-size: 10px"></i></button>
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-center w3-black w3-padding-16 w3-small">
+        </footer>
+
+</body>
+
+</html>

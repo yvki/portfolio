@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Yap Min Ru Vicki - ACAD Book</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width = 1050, user-scalable = no" />
+	<script type="text/javascript" src="../../extras/jquery.min.1.7.js"></script>
+	<script type="text/javascript" src="../../extras/modernizr.2.5.3.min.js"></script>
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<script type="text/javascript">
+		function loadApp() {
+			$('.flipbook').turn({
+				width: 922,
+				height: 600,
+				elevation: 50,
+				gradients: true,
+				autoCenter: true
+			});
+		}
+		yepnope({
+			test: Modernizr.csstransforms,
+			yep: ['../../lib/turn.js'],
+			nope: ['../../lib/turn.html4.min.js'],
+			both: ['css/basic.css'],
+			complete: loadApp
+		});
+	</script>
+</head>
+
+<body>
+	<div class="flipbook-viewport">
+		<div class="container">
+			<div class="flipbook">
+				<div style="background-image:url(pages/a1.png)"></div>
+				<div style="background-image:url(pages/a2.png)"></div>
+				<div style="background-image:url(pages/a3.png)"></div>
+				<div style="background-image:url(pages/a4.png)"></div>
+				<div style="background-image:url(pages/a5.png)"></div>
+				<div style="background-image:url(pages/a6.png)"></div>
+				<div style="background-image:url(pages/a7.png)"></div>
+				<div style="background-image:url(pages/a8.png)"></div>
+				<div style="background-image:url(pages/a9.png)"></div>
+				<div style="background-image:url(pages/a10.png)"></div>
+				<div style="background-image:url(pages/a11.png)"></div>
+				<div style="background-image:url(pages/a12.png)"></div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<title>YVKI - Sports</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--icon & stylesheet-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap">
+<!--bootstrap, javascript & popper-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+<style>
+    body {
+        font-family: "Times New Roman", Georgia, Serif;
+        background-color: black;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Playfair Display";
+        letter-spacing: 3px;
+    }
+
+    .page {
+        background-color: black;
+    }
+
+    .w3-bar-item:hover {
+        color: rgb(53, 123, 228) !important;
+    }
+
+    .fa-graduation-cap:hover {
+        color: rgb(53, 123, 228) !important;
+    }
+
+    .fa-briefcase:hover {
+        color: rgb(53, 123, 228) !important;
+    }
+
+    .fa-flag:hover {
+        color: rgb(53, 123, 228) !important;
+    }
+
+    .fa-futbol-o:hover {
+        color: rgb(53, 123, 228) !important;
+    }
+
+    .fa-heart:hover {
+        color: rgb(53, 123, 228) !important;
+    }
+
+    .fa-trophy:hover {
+        color: rgb(53, 123, 228) !important;
+    }
+
+    .fa-pencil-square-o:hover {
+        color: rgb(53, 123, 228) !important;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 10px;
+        height: 300px;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    @media screen and (max-width: 600px) {
+        .column {
+            width: 100%;
+        }
+    }
+
+    footer {
+        border-top: 1px solid grey;
+    }
+
+    .btn {
+        top: 10%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: purple;
+        border: 2px solid rgb(253, 157, 47);
+        color: white;
+        font-size: 12px;
+        padding: 8px 16px;
+        cursor: pointer;
+        border-radius: 30px;
+        text-align: center;
+    }
+
+    .btn:hover {
+        background-color: rgb(253, 157, 47);
+        border: 2px solid purple;
+        color: black;
+    }
+</style>
+
+<body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top w3-border-bottom">
+        <div class="w3-bar w3-large w3-black w3-padding w3-card" style="letter-spacing:2px;">
+            <a href="index.html" class="w3-bar-item"><img src="images/logo.PNG" width="35" height="35"></a>
+            <!--<a class="w3-bar-item"> E-Portfolio</a>-->
+            <!-- Right-sided navbar links. Hide them on small screens. -->
+            <div class="w3-right w3-hide-medium">
+                <a href="academics.html" class="w3-bar-item"><i class="fa fa-graduation-cap"></i></a>
+                <a href="ccas.html" class="w3-bar-item"><i class="fa fa-briefcase"></i></a>
+                <a href="leadership.html" class="w3-bar-item"><i class="fa fa-flag"></i></a>
+                <a href="sports.html" class="w3-bar-item"><i class="fa fa-futbol-o"></i></a>
+                <a href="vias.html" class="w3-bar-item"><i class="fa fa-heart"></i></a>
+                <a href="others.html" class="w3-bar-item"><i class="fa fa-trophy"></i></a>
+                <a href="contact.html" class="w3-bar-item"><i class="fa fa-pencil-square-o"> </i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-padding-64 w3-black w3-panel">
+        <div class="row">
+            <div class="column w3-animate-top">
+                <p>Primary 1 (Year 2009)</p>
+                <p>- P1 Gymnastics Programme - Certificate of Accomplishment</p>
+                <p>Primary 3 (Year 2011)</p>
+                <p>- P3 Gymnastics Programme - Certificate of Accomplishment</p>
+                <p>Primary 4 (Year 2012)</p>
+                <p>- Annual P4 Sports Camp @ Dairy Farm Singapore Participant</p>
+                <p>- P4 Physical Fitness Programme Participant</p>
+                <p>- Sports and Health Carnival and Mass Run/ Workout 2012 Participant</p>
+                <p>- P4 Play @ Recess Programme Participant</p>
+            </div>
+            <div class="column w3-animate-top">
+                <p>Primary 5 (Year 2013)</p>
+                <p>- P5 Physical Fitness and Tchoukball Programme Participant</p>
+                <p>- Sports and Health Carnival and Mass Run/ Workout 2013 Participant</p>
+                <p>- Play @ Recess Programme Participant</p>
+                <p>Secondary 1 (Year 2015)</p>
+                <p>- Inter-school Cross Country 2015 Individual Category: 8th Place</p>
+                <p>- Inter-school Cross Country 2015 Team Category: 3rd Place</p>
+                <p>Secondary 2 (Year 2016)</p>
+                <p>- Fitness Run 2016 - 13th Place</p>
+                <p>- Sports and Health Carnival 2016 Participant</p>
+            </div>
+            <div class="column w3-animate-top">
+                <p>Secondary 3 (Year 2017)</p>
+                <p>- Fitness Run 2017 - 15th Place</p>
+                <p>- Sports and Health Carnival 2017 Participant</p>
+                <p>Secondary 4 (Year 2018)</p>
+                <p>- Fitness Run 2018 Participant</p>
+                <p>- Sports and Health Carnival 2018 Participant</p>
+                <p>Poly Year 1 (Year 2019)</p>
+                <p>- Sports For Life (SFL) Badminton Module Participant </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-small w3-black w3-border w3-border-black w3-display-bottomright">
+        <a href="game.html"><button class="btn"><i style="font-size:15px" class="fa">&#xf11b;</i> PLAY MINI
+                GAME</button></a>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<title>YVKI - BLOCKY Game</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--icon & stylesheet-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap">
+<!--bootstrap, javascript & popper-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+<head>
+    <style>
+        canvas {
+            background-color: black;
+        }
+
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body class="w3-display-middle" onload="startGame()">
+    <script>
+
+        var myGamePiece;
+        var myObstacles = [];
+        var myScore;
+
+        function startGame() {
+            myGamePiece = new component(30, 30, "purple", 10, 120);
+            myScore = new component("30px", "Consolas", "white", 280, 40, "text");
+            myGameArea.start();
+        }
+
+        var myGameArea = {
+            canvas: document.createElement("canvas"),
+            start: function () {
+                this.canvas.width = 480;
+                this.canvas.height = 270;
+                this.context = this.canvas.getContext("2d");
+                document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+                this.frameNo = 0;
+                this.interval = setInterval(updateGameArea, 20);
+            },
+            clear: function () {
+                this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+            },
+            stop: function () {
+                clearInterval(this.interval);
+            }
+        }
+
+        function component(width, height, color, x, y, type) {
+            this.type = type;
+            this.width = width;
+            this.height = height;
+            this.speedX = 0;
+            this.speedY = 0;
+            this.x = x;
+            this.y = y;
+            this.update = function () {
+                ctx = myGameArea.context;
+                if (this.type == "text") {
+                    ctx.font = this.width + " " + this.height;
+                    ctx.fillStyle = color;
+                    ctx.fillText(this.text, this.x, this.y);
+                } else {
+                    ctx.fillStyle = color;
+                    ctx.fillRect(this.x, this.y, this.width, this.height);
+                }
+            }
+            this.newPos = function () {
+                this.x += this.speedX;
+                this.y += this.speedY;
+            }
+            this.crashWith = function (otherobj) {
+                var myleft = this.x;
+                var myright = this.x + (this.width);
+                var mytop = this.y;
+                var mybottom = this.y + (this.height);
+                var otherleft = otherobj.x;
+                var otherright = otherobj.x + (otherobj.width);
+                var othertop = otherobj.y;
+                var otherbottom = otherobj.y + (otherobj.height);
+                var crash = true;
+                if ((mybottom < othertop) || (mytop > otherbottom) || (myright < otherleft) || (myleft > otherright)) {
+                    crash = false;
+                }
+                return crash;
+            }
+        }
+
+        function updateGameArea() {
+            var x, height, gap, minHeight, maxHeight, minGap, maxGap;
+            for (i = 0; i < myObstacles.length; i += 1) {
+                if (myGamePiece.crashWith(myObstacles[i])) {
+                    myGameArea.stop();
+                    return;
+                }
+            }
+            myGameArea.clear();
+            myGameArea.frameNo += 1;
+            if (myGameArea.frameNo == 1 || everyinterval(150)) {
+                x = myGameArea.canvas.width;
+                minHeight = 20;
+                maxHeight = 200;
+                height = Math.floor(Math.random() * (maxHeight - minHeight + 1) + minHeight);
+                minGap = 50;
+                maxGap = 200;
+                gap = Math.floor(Math.random() * (maxGap - minGap + 1) + minGap);
+                myObstacles.push(new component(10, height, "orange", x, 0));
+                myObstacles.push(new component(10, x - height - gap, "orange", x, height + gap));
+            }
+            for (i = 0; i < myObstacles.length; i += 1) {
+                myObstacles[i].speedX = -1;
+                myObstacles[i].newPos();
+                myObstacles[i].update();
+            }
+            myScore.text = "SCORE: " + myGameArea.frameNo;
+            myScore.update();
+            myGamePiece.newPos();
+            myGamePiece.update();
+        }
+
+        function everyinterval(n) {
+            if ((myGameArea.frameNo / n) % 1 == 0) { return true; }
+            return false;
+        }
+
+        function moveup() {
+            myGamePiece.speedY = -1;
+        }
+
+        function movedown() {
+            myGamePiece.speedY = 1;
+        }
+
+        function moveleft() {
+            myGamePiece.speedX = -1;
+        }
+
+        function moveright() {
+            myGamePiece.speedX = 1;
+        }
+
+        function clearmove() {
+            myGamePiece.speedX = 0;
+            myGamePiece.speedY = 0;
+        }
+
+        window.alert("Welcome to BLOCKY - a mini web-game!\n\nHow to Play\n1. Avoid knocking BLOCKY against the orange towers.\n2. Navigate BLOCKY using the UP, DOWN, LEFT and RIGHT buttons. \n3. Score will be auto-counted for each second BLOCKY is alive.\n4. To restart the game, click the default browser reload button.\n\nHave fun beating your high score!\nAnd anyways, BLOCKY did its exercise, have you?");
+    </script>
+    <div style="text-align:center; width:480px;">
+        <p></p>
+        <button class="w3-margin w3-black" style="font-size:20px;" onmousedown="moveup()" onmouseup="clearmove()"
+            ontouchstart="moveup()"><i class="fa fa-arrow-up"></i></button><br><br>
+        <button class="w3-margin  w3-black" style="font-size:20px;" onmousedown="moveleft()" onmouseup="clearmove()"
+            ontouchstart="moveleft()"><i class="fa fa-arrow-left"></i></button>
+        <button class="w3-margin  w3-black" style="font-size:20px;" onmousedown="moveright()" onmouseup="clearmove()"
+            ontouchstart="moveright()"><i class="fa fa-arrow-right"></i></button><br><br>
+        <button class="w3-margin  w3-black" style="font-size:20px;" onmousedown="movedown()" onmouseup="clearmove()"
+            ontouchstart="movedown()"><i class="fa fa-arrow-down"></i></button>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+<title>YVKI - Merch</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--icon & stylesheet-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap">
+<!--bootstrap, javascript & popper-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+<!--script src="https://kit.fontawesome.com/a076d05399.js"></script>-->
+<script>
+    function checkout() {
+        alert("Thank you! Your response has been received.\nYour merch will arrive in approximately 2 weeks.")
+    }
+</script>
+<style>
+    body {
+        font-family: "Times New Roman", Georgia, Serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Playfair Display";
+        letter-spacing: 3px;
+    }
+
+    .page {
+        background-color: black;
+    }
+
+    .fa-graduation-cap:hover {
+        color: rgb(53, 123, 228) !important;
+    }
+
+    .fa-briefcase:hover {
+        color: rgb(53, 123, 228) !important;
+    }
+
+    .fa-flag:hover {
+        color: rgb(53, 123, 228) !important;
+    }
+
+    .fa-futbol-o:hover {
+        color: rgb(53, 123, 228) !important;
+    }
+
+
+    .fa-heart:hover {
+        color: rgb(53, 123, 228) !important;
+    }
+
+    .fa-trophy:hover {
+        color: rgb(53, 123, 228) !important;
+    }
+
+    .fa-pencil-square-o:hover {
+        color: rgb(53, 123, 228) !important;
+    }
+
+    .btn {
+        background-color: black;
+        border: 2px solid royalblue;
+        border-radius: 10px;
+        color: white;
+    }
+
+    .btn:hover {
+        background-color: royalblue;
+        color: white;
+    }
+
+    footer {
+        border-top: 1px solid grey;
+    }
+
+    .column {
+        float: left;
+        width: 25%;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    @media screen and (max-width: 600px) {
+        .column {
+            width: 100%;
+        }
+    }
+</style>
+
+<body class="w3-animate-top">
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top w3-border-bottom">
+        <div class="w3-bar w3-small w3-black w3-padding w3-card" style="letter-spacing:2px;">
+            <a href="index.html" class="w3-bar-item w3-large"><img src="images/merch.PNG" width="35" height="35"></a>
+            <!--<a class="w3-bar-item"> E-Portfolio</a>-->
+            <!-- Right-sided navbar links. Hide them on small screens. -->
+            <!-- <div class="w3-middle w3-hide-medium w3-bar-item">
+                <i style="font-size:22px" class="fa">&#xf118;</i> <i style="font-size:22px" class="fa">&#xf11a;</i>
+                <i style="font-size:22px" class="fa">&#xf119;</i>
+            </div> -->
+        </div>
+    </div>
+
+    <!-- Image header -->
+    <div class="w3-black">
+        <img src="images/vic@TRFM2.jpg" alt="vic@merch" style="width:100%;" class="w3-opacity">
+        <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+            <h1>COLLECTION 2020</h1>
+            <h1 class="w3-hide-small">
+                <font color="whitesmoke">EXCLUSIVE DROPS SEP 2021</font>
+            </h1>
+            <p><a href="#merch" class="btn" onclick="document.getElementById('merchs').style.display='block'">SHOP THE
+                    COLLECTION</a></p>
+        </div>
+    </div>
+
+    <div class="w3-container w3-text-white w3-black w3-padding-16 w3-center" id="merch">
+        <p style="font-size: large;"><b>WOMEN</b></p>
+    </div>
+
+    <div class="row w3-black">
+        <div class="column">
+            <div class="w3-container">
+                <div class="w3-display-container" style="border: 3px solid royalblue">
+                    <img class="w3-opacity-min" src="images/jumper.PNG" style="width:100%">
+                    <span class="w3-tag w3-display-topleft w3-medium w3-red">SOLD OUT</span>
+                    <span class="w3-tag w3-display-topright w3-medium"><i class="fa fa-search"
+                            onclick="document.getElementById('fj').style.display='block'"></i></span>
+
+
+                    <div id="fj" class="w3-modal w3-animate-opacity">
+                        <div class="w3-modal-content" style="padding:10px; border-radius:20px; text-align: justify;">
+                            <div class="w3-container w3-white">
+                                <p><i onclick="document.getElementById('fj').style.display='none'"
+                                        class="fa fa-remove w3-white w3-button w3-xlarge w3-right"></i><b>Product
+                                        Info</b></p>
+                                <p>• 52% Cotton and 48% Polyester Fleece with average fabric weight of 200g.</p>
+                                <p>• Black pullover cropped hoodie with blended-in drawcords and multi-color ink print
+                                    on front.</p>
+                                <p>• Featuring the "YV:)" design from Vicki Yap.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="w3-center">Pullover Cropped Hoodie<br><b>$49.90</b></p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="w3-container">
+                <div class="w3-display-container" style="border: 3px solid royalblue">
+                    <img class="w3-opacity-min" src="images/legging.PNG" style="width:100%">
+                    <span class="w3-tag w3-display-topleft w3-medium w3-blue">IN STOCK</span>
+                    <span class="w3-tag w3-display-topright w3-medium"><i class="fa fa-search"
+                            onclick="document.getElementById('l').style.display='block'"></i></span>
+
+                    <div id="l" class="w3-modal w3-animate-opacity">
+                        <div class="w3-modal-content" style="padding:10px; border-radius:20px; text-align: justify;">
+                            <div class="w3-container w3-white">
+                                <p><i onclick="document.getElementById('l').style.display='none'"
+                                        class="fa fa-remove w3-white w3-button w3-xlarge w3-right"></i><b>Product
+                                        Info</b></p>
+                                <p>• 95% Cotton and 5% Elastane with average fabric weight of 160g.</p>
+                                <p>• Black tapered-to-fit leggings with elastic waistband.</p>
+                                <p>• Featuring the "YV:)" design from Vicki Yap.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="w3-center">Leggings<br><b>$39.90</b></p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="w3-container">
+                <div class="w3-display-container" style="border: 3px solid royalblue">
+                    <img class="w3-opacity-min" src="images/shirt.PNG" style="width:100%">
+                    <span class="w3-tag w3-display-topleft w3-medium w3-yellow">NEW</span>
+                    <span class="w3-tag w3-display-topright w3-medium"><i class="fa fa-search"
+                            onclick="document.getElementById('sf').style.display='block'"></i></span>
+
+                    <div id="sf" class="w3-modal w3-animate-opacity">
+                        <div class="w3-modal-content" style="padding:10px; border-radius:20px; text-align: justify;">
+                            <div class="w3-container w3-white">
+                                <p><i onclick="document.getElementById('sf').style.display='none'"
+                                        class="fa fa-remove w3-white w3-button w3-xlarge w3-right"></i><b>Product
+                                        Info</b></p>
+                                <p>• 99% Cotton and 1% Viscose with average fabric weight of 130g.</p>
+                                <p>• Oatmeal shirt with double-stitched collar hems and multi-color ink print on front.
+                                </p>
+                                <p>• Featuring the "YV:)" design from Vicki Yap.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="w3-center">Premium Shirt<br><b>$25</b></p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="w3-container">
+                <div class="w3-display-container" style="border: 3px solid royalblue">
+                    <img class="w3-opacity-min" src="images/shirt2.PNG" style="width:100%">
+                    <span class="w3-tag w3-display-topleft w3-medium w3-yellow">NEW</span>
+
+                    <span class="w3-tag w3-display-topright w3-medium"><i class="fa fa-search"
+                            onclick="document.getElementById('tbs').style.display='block'"></i></span>
+
+                    <div id="tbs" class="w3-modal w3-animate-opacity">
+                        <div class="w3-modal-content" style="padding:10px; border-radius:20px; text-align: justify;">
+                            <div class="w3-container w3-white">
+                                <p><i onclick="document.getElementById('tbs').style.display='none'"
+                                        class="fa fa-remove w3-white w3-button w3-xlarge w3-right"></i><b>Product
+                                        Info</b></p>
+                                <p>• 100% Cotton with average fabric weight of 150g.</p>
+                                <p>• Black shirt with an asymmetrical tied-bow and multi-color ink print on front.</p>
+                                <p>• Featuring the "YV:)" design from Vicki Yap.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="w3-center">Tied-Bow Shirt<br><b>$29.90</b></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container w3-text-white w3-black w3-padding-16 w3-center" id="merch">
+        <p style="font-size: large;"><b>MEN</b></p>
+    </div>
+
+    <div class="row w3-black">
+        <div class="column">
+            <div class="w3-container">
+                <div class="w3-display-container" style="border: 3px solid royalblue">
+                    <img class="w3-opacity-min" src="images/shirt3.PNG" style="width:100%">
+                    <span class="w3-tag w3-display-topleft w3-medium w3-yellow">NEW</span>
+                    <span class="w3-tag w3-display-topright w3-medium"><i class="fa fa-search"
+                            onclick="document.getElementById('sm').style.display='block'"></i></span>
+
+                    <div id="sm" class="w3-modal w3-animate-opacity">
+                        <div class="w3-modal-content" style="padding:10px; border-radius:20px; text-align: justify;">
+                            <div class="w3-container w3-white">
+                                <p><i onclick="document.getElementById('sm').style.display='none'"
+                                        class="fa fa-remove w3-white w3-button w3-xlarge w3-right"></i><b>Product
+                                        Info</b></p>
+                                <p>• 60% Cotton and 40% Polyester with average fabric weight of 130g.</p>
+                                <p>• Black shirt with contrasting striped sleeves with multi-color ink print on front.
+                                </p>
+                                <p>• Featuring the "YV:)" design from Vicki Yap.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="w3-center">Premium Shirt<br><b>$25</b></p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="w3-container">
+                <div class="w3-display-container" style="border: 3px solid royalblue">
+                    <img class="w3-opacity-min" src="images/jumper2.PNG" style="width:100%">
+                    <span class="w3-tag w3-display-topleft w3-medium w3-red">SOLD OUT</span>
+
+                    <span class="w3-tag w3-display-topright w3-medium"><i class="fa fa-search"
+                            onclick="document.getElementById('mj').style.display='block'"></i></span>
+
+                    <div id="mj" class="w3-modal w3-animate-opacity">
+                        <div class="w3-modal-content" style="padding:10px; border-radius:20px; text-align: justify;">
+                            <div class="w3-container w3-white">
+                                <p><i onclick="document.getElementById('mj').style.display='none'"
+                                        class="fa fa-remove w3-white w3-button w3-xlarge w3-right"></i><b>Product
+                                        Info</b></p>
+                                <p>• 60% Cotton and 40% Polytester with average fabric weight of 240g.</p>
+                                <p>• Denim pullover hoodie with constrasting drawcords and multi-color ink print on
+                                    front.</p>
+                                <p>• Featuring the "YV:)" design from Vicki Yap.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="w3-center">Pullover Premium Hoodie<br><b>$49.90</b></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container w3-text-white w3-black w3-padding-16 w3-center" id="merch">
+        <p style="font-size: large;"><b>ACCESSORIES</b></p>
+    </div>
+
+    <div class="row w3-black">
+        <div class="column">
+            <div class="w3-container">
+                <div class="w3-display-container" style="border: 3px solid royalblue">
+                    <img class="w3-opacity-min" src="images/socks.PNG" style="width:100%">
+                    <span class="w3-tag w3-display-topleft w3-medium w3-yellow">NEW</span>
+
+                    <span class="w3-tag w3-display-topright w3-medium"><i class="fa fa-search"
+                            onclick="document.getElementById('s').style.display='block'"></i></span>
+
+                    <div id="s" class="w3-modal w3-animate-opacity">
+                        <div class="w3-modal-content" style="padding:10px; border-radius:20px; text-align: justify;">
+                            <div class="w3-container w3-white">
+                                <p><i onclick="document.getElementById('s').style.display='none'"
+                                        class="fa fa-remove w3-white w3-button w3-xlarge w3-right"></i><b>Product
+                                        Info</b></p>
+                                <p>• 80% Spandex and 20% Polytester with average fabric weight of 30g.</p>
+                                <p>• White breathable ankle socks with Soft Touch™ tread.</p>
+                                <p>• Featuring the "YV:)" design from Vicki Yap.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="w3-center">Ankle Socks<br><b>$10.90</b></p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="w3-container">
+                <div class="w3-display-container" style="border: 3px solid royalblue">
+                    <img class="w3-opacity-min" src="images/bag.PNG" style="width:100%">
+                    <span class="w3-tag w3-display-topleft w3-medium w3-yellow">NEW</span>
+                    <span class="w3-tag w3-display-topright w3-medium"><i class="fa fa-search"
+                            onclick="document.getElementById('db').style.display='block'"></i></span>
+
+                    <div id="db" class="w3-modal w3-animate-opacity">
+                        <div class="w3-modal-content" style="padding:10px; border-radius:20px; text-align: justify;">
+                            <div class="w3-container w3-white">
+                                <p><i onclick="document.getElementById('db').style.display='none'"
+                                        class="fa fa-remove w3-white w3-button w3-xlarge w3-right"></i><b>Product
+                                        Info</b></p>
+                                <p>• 100% Cotton with average fabric weight of 170g.</p>
+                                <p>• Carolina blue bag with drawcord cinch ropes closure.</p>
+                                <p>• Featuring the "YV:)" design from Vicki Yap.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="w3-center">Drawstring Bag<br><b>$19.90</b></p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="w3-container">
+                <div class="w3-display-container" style="border: 3px solid royalblue">
+                    <img class="w3-opacity-min" src="images/beanie.PNG" style="width:100%">
+                    <span class="w3-tag w3-display-topleft w3-medium w3-red">SOLD OUT</span>
+
+                    <span class="w3-tag w3-display-topright w3-medium"><i class="fa fa-search"
+                            onclick="document.getElementById('bn').style.display='block'"></i></span>
+
+                    <div id="bn" class="w3-modal w3-animate-opacity">
+                        <div class="w3-modal-content" style="padding:10px; border-radius:20px; text-align: justify;">
+                            <div class="w3-container w3-white">
+                                <p><i onclick="document.getElementById('bn').style.display='none'"
+                                        class="fa fa-remove w3-white w3-button w3-xlarge w3-right"></i><b>Product
+                                        Info</b></p>
+                                <p>• 63% Polyester, 32% Cotton and 5% Spandex with average fabric weight of 140g.</p>
+                                <p>• Heather grey beanie with cuff.</p>
+                                <p>• Featuring the "YV:)" design from Vicki Yap.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="w3-center">Beanie<br><b>$19.90</b></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Merch Modal -->
+    <div id="merchs" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom w3-card-4">
+            <header class="w3-container w3-center" style="background-color: black; color:royalblue">
+                <span onclick="document.getElementById('merchs').style.display='none'"
+                    class="w3-button w3-xlarge w3-display-topright"><b><i class="fa fa-remove"></i></b></span>
+            </header>
+            <div class="w3-container w3-black">
+                <p class="w3-center" style="padding-top: 15px"><label>Merch Info</label></p>
+                <label>Quantity</label>
+                <font color="grey">
+                    <input class="w3-input w3-border" type="number" placeholder="0" min="1" max="10" required>
+                </font>
+                <p></p>
+                <label>Type of Apparel</label>
+                <font color="grey">
+                    <p><select id="type_slide" placeholder="Type (Required)" autocomplete="type"
+                            class="colorform-control fifty w3-input" name="type" required>
+                            <option value="">-- choose one --
+                                <optgroup label="Accessory">
+                                    <option value="b">Beanie</option>
+                                    <option value="b">Drawstring Bag</option>
+                                    <option value="b">Socks</option>
+                                </optgroup>
+                                <optgroup label="Female Apparel">
+                                    <option value="b">Cropped Hoodie</option>
+                                    <option value="b">Leggings</option>
+                                    <option value="j">Premium Shirt</option>
+                                    <option value="b">Tied Bow Shirt</option>
+                                </optgroup>
+                                <optgroup label="Male Apparel">
+                                    <option value="s">Premium Shirt</option>
+                                    <option value="p">Premium Hoodie</option>
+                                </optgroup>
+                        </select></p>
+                </font>
+                <p></p>
+                <label>Size</label>
+                <font color="grey">
+                    <p><select id="size_slide" placeholder="Size (Required)" autocomplete="size"
+                            class="colorform-control fifty w3-input" name="size" required>
+                            <option value="xs">XS</option>
+                            <option value="s">S</option>
+                            <option value="m">M</option>
+                            <option value="l">L</option>
+                            <option value="xl">XL</option>
+                        </select></p>
+                </font>
+                <p></p>
+                <p class="w3-center"><label>Buyer Info</label></p>
+                <font color="grey">
+                    <input class="w3-input w3-border" type="text" placeholder="Full Name" required>
+                    <p></p>
+                    <input class="w3-input w3-border" type="text" placeholder="Email" required>
+                    <p></p>
+                    <input class="w3-input w3-border" type="text" placeholder="Address" required>
+                    <p></p>
+                </font>
+                <p class="w3-center"><label>Payment Info</label></p>
+                <font color="grey">
+                    <input class="w3-input w3-border" type="text" placeholder="Name on Card" required>
+                    <p></p>
+                    <input class="w3-input w3-border" type="text" placeholder="Credit Card Number" required>
+                    <p></p>
+                </font>
+                <p class="w3-center"><label>We Accept</label></p>
+                <p class="w3-center"><i class="fa fa-cc-amex" style="font-size: 25px; color: rgb(103, 155, 233)"></i> <i
+                        class="fa fa-cc-mastercard" style="font-size: 25px; color: rgb(103, 155, 233)"></i> <i
+                        class="fa fa-cc-paypal" style="font-size: 25px; color: rgb(103, 155, 233)"></i> <i
+                        class="fa fa-cc-visa" style="font-size: 25px; color: rgb(103, 155, 233)"></i></p>
+                <button class="w3-button w3-block" onclick="checkout()"
+                    style="width:100%; background-color: royalblue; border-radius: 30px;"><b>Checkout</b></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-32 w3-small">
+        <p>COPYRIGHT © 2020 YMRV ALL RIGHTS RESERVED</p>
+    </footer>
+</body>
+
+</html>
